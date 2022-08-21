@@ -1,5 +1,8 @@
+/* NOTE: Lichteffekt im Fullscreen hinter die div */
+
+
 body {
-  background-color: #000;
+  background-color: #333;
   position: relative;
 }
 .icon {
@@ -12,7 +15,7 @@ body {
   float: left;
   width: 160px;
   height: 160px;
-  margin-top: 50vh;
+  margin-top: 25vh;
   margin-left: 20%;
 }
 
@@ -24,23 +27,26 @@ body {
 
 .icon i {
   color: #fff;
-  font-size: 120px;
+  font-size: 110px;
   margin-top: 50%;
   margin-left: 50%;
   transform: translate(-50%,-50%);
 }
 
 @media screen and (max-width:1000px) {
+  body {
+    background-color: #efefef;
+  }
   .icon {
     float: none;
-    margin-top: 14vh;
+    margin-top: 10vh;
     margin-left: 50%;
     transform: translate(-50%,-50%);
-    transition: 1s;
-    width: 130px;
-    height: 130px;
+    transition: 0.5s;
+    width: 250px;
+    height: 250px;
   }
   .icon i {
-    font-size: 100px;
+    font-size: 180px;
   }
 }
