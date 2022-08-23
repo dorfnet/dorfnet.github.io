@@ -1,46 +1,62 @@
+*{
+  font-family: "montserrat",sans-serif;
+}
+
 body {
-  background-color: #000;
   position: relative;
-}
-.icon {
-  background-color: green;
-  border-radius: 50%;
-  border-top-left-radius: 5%;
-  transition: 0.5s;
-  cursor: pointer;
-  transform: translate(-50%,-50%);
-  float: left;
-  width: 160px;
-  height: 160px;
-  margin-top: 50vh;
-  margin-left: 20%;
+  margin: 0;
+  padding: 0;
 }
 
-.icon:hover{
-  border-radius: 10%;
-  transform: scale(1.2) translate(-42%,-42%);
-}
-
-
-.icon i {
-  color: #fff;
-  font-size: 120px;
-  margin-top: 50%;
-  margin-left: 50%;
-  transform: translate(-50%,-50%);
+.desktop {
+  visibility: visible;
 }
 
 @media screen and (max-width:1000px) {
-  .icon {
-    float: none;
-    margin-top: 14vh;
-    margin-left: 50%;
-    transform: translate(-50%,-50%);
-    transition: 1s;
-    width: 130px;
-    height: 130px;
+  .desktop {
+    visibility: hidden;
   }
-  .icon i {
-    font-size: 100px;
+  .mobile {
+    visibility: visible;
   }
+}
+
+
+.page{
+  background: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.col{
+  flex: 1;
+  height: 100vh;
+  position: relative;
+}
+
+.countdown-col{
+  background: url(../bg-img.jpg) no-repeat center;
+  background-size: cover;
+}
+.time{
+  color: #097006;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.time span{
+  padding: 0 14px;
+  font-size: 20px;
+  justify-content: center;
+}
+.time span div{
+  font-size: 50px;
 }
